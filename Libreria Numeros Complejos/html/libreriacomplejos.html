@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module libreriacomplejos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>libreriacomplejos</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cjulia%5Cdocuments%5Cgithub%5Ccnyt%5Clibreria%20numeros%20complejos%5Clibreriacomplejos.py">c:\users\julia\documents\github\cnyt\libreria numeros complejos\libreriacomplejos.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="math.html">math</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="libreriacomplejos.html#complejo">complejo</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="complejo">class <strong>complejo</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#complejo">complejo</a>(a=None,&nbsp;b=None,&nbsp;r=None,&nbsp;angle=None)<br>
+&nbsp;<br>
+Libreria&nbsp;de&nbsp;Numeros&nbsp;complejos,&nbsp;sera&nbsp;un&nbsp;objeto&nbsp;con&nbsp;atributos&nbsp;a,&nbsp;b&nbsp;,&nbsp;r&nbsp;y&nbsp;angle.<br>
+Donde&nbsp;a&nbsp;y&nbsp;b&nbsp;con&nbsp;las&nbsp;componentes&nbsp;cartesianes&nbsp;(&nbsp;a&nbsp;:&nbsp;parte&nbsp;real&nbsp;,&nbsp;b:&nbsp;parte&nbsp;imaginaria),<br>
+r&nbsp;es&nbsp;el&nbsp;modulo&nbsp;,&nbsp;y&nbsp;angle&nbsp;es&nbsp;angulo&nbsp;theta&nbsp;en&nbsp;coordenadas&nbsp;polares,<br>
+asi&nbsp;que&nbsp;cada&nbsp;representacion&nbsp;y&nbsp;atributos&nbsp;tendran&nbsp;que&nbsp;ser&nbsp;llamados&nbsp;de&nbsp;forma&nbsp;individual&nbsp;o&nbsp;pueden<br>
+ser&nbsp;vistos&nbsp;de&nbsp;a&nbsp;parejas.<br>
+Son&nbsp;INMUTABLES&nbsp;,&nbsp;por&nbsp;lo&nbsp;tanto&nbsp;una&nbsp;vez&nbsp;creados&nbsp;no&nbsp;se&nbsp;pueden&nbsp;modificar&nbsp;ninguno&nbsp;de&nbsp;sus&nbsp;atributos.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="complejo-__init__"><strong>__init__</strong></a>(self, a=None, b=None, r=None, angle=None)</dt><dd><tt>El&nbsp;constructor&nbsp;de&nbsp;complejos,&nbsp;podra&nbsp;crear&nbsp;el&nbsp;objeto&nbsp;con&nbsp;coordenadas&nbsp;polares,&nbsp;o&nbsp;cartesianas,<br>
+en&nbsp;cualquier&nbsp;caso&nbsp;seran&nbsp;calculados&nbsp;los&nbsp;atributos&nbsp;faltantes.&nbsp;En&nbsp;angulo&nbsp;debe&nbsp;ser&nbsp;en&nbsp;radianes&nbsp;y<br>
+siempre&nbsp;el&nbsp;angulo&nbsp;sera&nbsp;calculado&nbsp;(o&nbsp;recalculado)&nbsp;en&nbsp;forma&nbsp;positiva&nbsp;de&nbsp;0&nbsp;a&nbsp;2pi.<br>
+Lanzara&nbsp;una&nbsp;excepcion&nbsp;si&nbsp;no&nbsp;se&nbsp;ha&nbsp;insertado&nbsp;parametros&nbsp;necesarios,&nbsp;cartesianos&nbsp;o&nbsp;polares.<br>
+Si&nbsp;insertan&nbsp;todos&nbsp;los&nbsp;parametros&nbsp;ignorara&nbsp;los&nbsp;ultimos&nbsp;es&nbsp;decir&nbsp;,&nbsp;recalculara&nbsp;los&nbsp;polares.</tt></dd></dl>
+
+<dl><dt><a name="complejo-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Override&nbsp;para&nbsp;usar&nbsp;print,&nbsp;predeterminadamente&nbsp;al&nbsp;hacerle&nbsp;print&nbsp;al<br>
+numero&nbsp;<a href="#complejo">complejo</a>&nbsp;lo&nbsp;imprimira&nbsp;como&nbsp;la&nbsp;dupla&nbsp;(a,b)</tt></dd></dl>
+
+<dl><dt><a name="complejo-conjugado"><strong>conjugado</strong></a>(self)</dt><dd><tt>Retorna&nbsp;el&nbsp;conjugado&nbsp;de&nbsp;un&nbsp;numero&nbsp;<a href="#complejo">complejo</a>,<br>
+se&nbsp;podra&nbsp;lamar&nbsp;como&nbsp;el_numero.<a href="#complejo">complejo</a>()</tt></dd></dl>
+
+<dl><dt><a name="complejo-pcartesiana"><strong>pcartesiana</strong></a>(self)</dt><dd><tt>Imprime&nbsp;de&nbsp;la&nbsp;forma&nbsp;cartesiana&nbsp;a&nbsp;+&nbsp;ib&nbsp;el&nbsp;numero&nbsp;<a href="#complejo">complejo</a></tt></dd></dl>
+
+<dl><dt><a name="complejo-ppolar"><strong>ppolar</strong></a>(self)</dt><dd><tt>Imprime&nbsp;de&nbsp;la&nbsp;forma&nbsp;polar&nbsp;(r,&nbsp;angulo&nbsp;θ)</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="complejo-division"><strong>division</strong></a>(x, y)</dt><dd><tt>Retorna&nbsp;la&nbsp;division&nbsp;de&nbsp;dos&nbsp;complejos,&nbsp;creados&nbsp;como&nbsp;objetos.<br>
+Lanzara&nbsp;excepcion&nbsp;si&nbsp;alguno&nbsp;de&nbsp;los&nbsp;no&nbsp;es&nbsp;un&nbsp;<a href="#complejo">complejo</a>,&nbsp;y<br>
+si&nbsp;el&nbsp;divisor&nbsp;resulta&nbsp;ser&nbsp;0.&nbsp;(Zero&nbsp;Div&nbsp;Error)<br>
+Estatico,&nbsp;se&nbsp;podra&nbsp;llamar&nbsp;<a href="#complejo">complejo</a>.<a href="#complejo-division">division</a>(x,y)</tt></dd></dl>
+
+<dl><dt><a name="complejo-potencia"><strong>potencia</strong></a>(x, n)</dt><dd><tt>Retorna&nbsp;la&nbsp;potencia&nbsp;de&nbsp;un&nbsp;numero&nbsp;<a href="#complejo">complejo</a>,&nbsp;creado&nbsp;como&nbsp;objeto.<br>
+Lanzara&nbsp;excepcion&nbsp;si&nbsp;x&nbsp;no&nbsp;es&nbsp;un&nbsp;<a href="#complejo">complejo</a>.<br>
+n&nbsp;debe&nbsp;ser&nbsp;real<br>
+Estatico,&nbsp;se&nbsp;podra&nbsp;llamar&nbsp;<a href="#complejo">complejo</a>.<a href="#complejo-producto">producto</a>(x,y)</tt></dd></dl>
+
+<dl><dt><a name="complejo-producto"><strong>producto</strong></a>(x, y)</dt><dd><tt>Retorna&nbsp;el&nbsp;producto&nbsp;de&nbsp;dos&nbsp;complejos,&nbsp;creados&nbsp;como&nbsp;objetos.<br>
+Lanzara&nbsp;excepcion&nbsp;si&nbsp;alguno&nbsp;de&nbsp;los&nbsp;no&nbsp;es&nbsp;un&nbsp;<a href="#complejo">complejo</a><br>
+Estatico,&nbsp;se&nbsp;podra&nbsp;llamar&nbsp;<a href="#complejo">complejo</a>.<a href="#complejo-producto">producto</a>(x,y)</tt></dd></dl>
+
+<dl><dt><a name="complejo-resta"><strong>resta</strong></a>(x, y)</dt><dd><tt>Retorna&nbsp;la&nbsp;resta&nbsp;de&nbsp;dos&nbsp;complejos,&nbsp;creados&nbsp;como&nbsp;objetos.<br>
+Lanzara&nbsp;excepcion&nbsp;si&nbsp;alguno&nbsp;de&nbsp;los&nbsp;no&nbsp;es&nbsp;un&nbsp;<a href="#complejo">complejo</a><br>
+Estatico,&nbsp;se&nbsp;podra&nbsp;llamar&nbsp;<a href="#complejo">complejo</a>.<a href="#complejo-resta">resta</a>(x,y)</tt></dd></dl>
+
+<dl><dt><a name="complejo-soncomplejos"><strong>soncomplejos</strong></a>(x, y)</dt><dd><tt>Hace&nbsp;la&nbsp;verificacion&nbsp;de&nbsp;tipos,&nbsp;lanzara&nbsp;una&nbsp;excepcion&nbsp;si&nbsp;alguno&nbsp;de&nbsp;los&nbsp;parametros<br>
+x&nbsp;o&nbsp;y&nbsp;no&nbsp;es&nbsp;un&nbsp;<a href="#complejo">complejo</a><br>
+Estatico&nbsp;,&nbsp;se&nbsp;podar&nbsp;usar&nbsp;complejos.<a href="#complejo-soncomplejos">soncomplejos</a>(x,y)</tt></dd></dl>
+
+<dl><dt><a name="complejo-suma"><strong>suma</strong></a>(x, y)</dt><dd><tt>Retorna&nbsp;la&nbsp;suma&nbsp;de&nbsp;dos&nbsp;complejos,&nbsp;creados&nbsp;como&nbsp;objetos.<br>
+Lanzara&nbsp;excepcion&nbsp;si&nbsp;alguno&nbsp;de&nbsp;los&nbsp;no&nbsp;es&nbsp;un&nbsp;<a href="#complejo">complejo</a><br>
+Estatico,&nbsp;se&nbsp;podra&nbsp;llamar&nbsp;<a href="#complejo">complejo</a>.<a href="#complejo-suma">suma</a>(x,y)</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>a</strong></dt>
+<dd><tt>Get&nbsp;de&nbsp;a&nbsp;,&nbsp;devuelve&nbsp;la&nbsp;parte&nbsp;real,&nbsp;se&nbsp;podra&nbsp;utilizar:<br>
+el_numero.a</tt></dd>
+</dl>
+<dl><dt><strong>angle</strong></dt>
+<dd><tt>Get&nbsp;de&nbsp;angle&nbsp;,&nbsp;devuelve&nbsp;el&nbsp;angulo,&nbsp;se&nbsp;podra&nbsp;utilizar:<br>
+el_numero.angle</tt></dd>
+</dl>
+<dl><dt><strong>b</strong></dt>
+<dd><tt>Get&nbsp;de&nbsp;b&nbsp;,&nbsp;devuelve&nbsp;la&nbsp;parte&nbsp;imaginaria,&nbsp;se&nbsp;podra&nbsp;utilizar:<br>
+el_numero.b</tt></dd>
+</dl>
+<dl><dt><strong>r</strong></dt>
+<dd><tt>Get&nbsp;de&nbsp;r&nbsp;,&nbsp;devuelve&nbsp;el&nbsp;modulo,&nbsp;se&nbsp;podra&nbsp;utilizar:<br>
+el_numero.r</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
