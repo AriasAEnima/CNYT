@@ -13,7 +13,8 @@ class complejo:
         El constructor de complejos, podra crear el objeto con coordenadas polares, o cartesianas,
         en cualquier caso seran calculados los atributos faltantes. En angulo debe ser en radianes y
         siempre el angulo sera calculado (o recalculado) en forma positiva de 0 a 2pi.
-        Lanzara una excepcion si no se ha insertado parametros necesarios, cartesianos o polares.
+        Lanzara una excepcion si no se ha insertado parametros necesarios (o erroneos r<0)
+        , cartesianos o polares.
         Si insertan todos los parametros ignorara los ultimos es decir , recalculara los polares.
         '''
         if(a != None and b!= None):
@@ -21,12 +22,12 @@ class complejo:
             self._b=b
             self._r=math.sqrt(a**2+b**2)
             angle=math.atan2(b,a)
-        elif(r!=None and angle!=None):
+        elif(r!=None and r>=0 and angle!=None):
             self._r=r
             self._b=r*math.sin(angle)
             self._a=r*math.cos(angle)
         else:
-            raise Exception("ERROR: Faltan Parametros")
+            raise Exception("ERROR: Faltan Parametros o estan erroneos")
         if (angle<0):
                 angle=angle*-1
                 angle=angle%(math.pi*2)
@@ -51,7 +52,7 @@ class complejo:
         Estatico, se podra llamar complejo.resta(x,y)
         '''
         complejo.soncomplejos(x,y)
-        return complejo(x.a-y.b,x.b-y.b)
+        return complejo(x.a-y.a,x.b-y.b)
 
     @staticmethod
     def producto(x, y):
@@ -85,13 +86,21 @@ class complejo:
     def potencia(x,n):
         '''
         Retorna la potencia de un numero complejo, creado como objeto.
-        Lanzara excepcion si x no es un complejo.
+        Lanzara excepcion si x no es un complejo o si n<0
         n debe ser real
         Estatico, se podra llamar complejo.producto(x,y)
         '''
         if(not isinstance(x, complejo)):
             raise Exception("ERROR: Deben se Complejo el numero a elevar")
-        return complejo(r=x.r**n,angle=n*x.angle)
+        if (n==0):
+            ans=complejo(0,0)
+        elif (n<0):
+            raise Exception("ERROR: el exponente es negativo")
+        else:
+            ans=complejo(x.a,x.b)
+            for i in range (1,n):
+                ans=complejo.producto(ans,x)
+        return ans
 
     def conjugado(self):
         '''
