@@ -53,7 +53,8 @@ Son&nbsp;INMUTABLES&nbsp;,&nbsp;por&nbsp;lo&nbsp;tanto&nbsp;una&nbsp;vez&nbsp;cr
 <dl><dt><a name="complejo-__init__"><strong>__init__</strong></a>(self, a=None, b=None, r=None, angle=None)</dt><dd><tt>El&nbsp;constructor&nbsp;de&nbsp;complejos,&nbsp;podra&nbsp;crear&nbsp;el&nbsp;objeto&nbsp;con&nbsp;coordenadas&nbsp;polares,&nbsp;o&nbsp;cartesianas,<br>
 en&nbsp;cualquier&nbsp;caso&nbsp;seran&nbsp;calculados&nbsp;los&nbsp;atributos&nbsp;faltantes.&nbsp;En&nbsp;angulo&nbsp;debe&nbsp;ser&nbsp;en&nbsp;radianes&nbsp;y<br>
 siempre&nbsp;el&nbsp;angulo&nbsp;sera&nbsp;calculado&nbsp;(o&nbsp;recalculado)&nbsp;en&nbsp;forma&nbsp;positiva&nbsp;de&nbsp;0&nbsp;a&nbsp;2pi.<br>
-Lanzara&nbsp;una&nbsp;excepcion&nbsp;si&nbsp;no&nbsp;se&nbsp;ha&nbsp;insertado&nbsp;parametros&nbsp;necesarios,&nbsp;cartesianos&nbsp;o&nbsp;polares.<br>
+Lanzara&nbsp;una&nbsp;excepcion&nbsp;si&nbsp;no&nbsp;se&nbsp;ha&nbsp;insertado&nbsp;parametros&nbsp;necesarios&nbsp;(o&nbsp;erroneos&nbsp;r&lt;0)<br>
+,&nbsp;cartesianos&nbsp;o&nbsp;polares.<br>
 Si&nbsp;insertan&nbsp;todos&nbsp;los&nbsp;parametros&nbsp;ignorara&nbsp;los&nbsp;ultimos&nbsp;es&nbsp;decir&nbsp;,&nbsp;recalculara&nbsp;los&nbsp;polares.</tt></dd></dl>
 
 <dl><dt><a name="complejo-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Override&nbsp;para&nbsp;usar&nbsp;print,&nbsp;predeterminadamente&nbsp;al&nbsp;hacerle&nbsp;print&nbsp;al<br>
@@ -74,7 +75,7 @@ si&nbsp;el&nbsp;divisor&nbsp;resulta&nbsp;ser&nbsp;0.&nbsp;(Zero&nbsp;Div&nbsp;E
 Estatico,&nbsp;se&nbsp;podra&nbsp;llamar&nbsp;<a href="#complejo">complejo</a>.<a href="#complejo-division">division</a>(x,y)</tt></dd></dl>
 
 <dl><dt><a name="complejo-potencia"><strong>potencia</strong></a>(x, n)</dt><dd><tt>Retorna&nbsp;la&nbsp;potencia&nbsp;de&nbsp;un&nbsp;numero&nbsp;<a href="#complejo">complejo</a>,&nbsp;creado&nbsp;como&nbsp;objeto.<br>
-Lanzara&nbsp;excepcion&nbsp;si&nbsp;x&nbsp;no&nbsp;es&nbsp;un&nbsp;<a href="#complejo">complejo</a>.<br>
+Lanzara&nbsp;excepcion&nbsp;si&nbsp;x&nbsp;no&nbsp;es&nbsp;un&nbsp;<a href="#complejo">complejo</a>&nbsp;o&nbsp;si&nbsp;n&lt;0<br>
 n&nbsp;debe&nbsp;ser&nbsp;real<br>
 Estatico,&nbsp;se&nbsp;podra&nbsp;llamar&nbsp;<a href="#complejo">complejo</a>.<a href="#complejo-producto">producto</a>(x,y)</tt></dd></dl>
 
