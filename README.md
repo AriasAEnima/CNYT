@@ -6,8 +6,9 @@
 ## Programado por : Julian Eduardo Arias Barrera
 ### Contenido:
 1) Descripcion
-2) Informacion al Usuario
-3) Pruebas
+2) Documentacion
+3) Informacion al Usuario
+4) Pruebas
 ### 1) Descripcion:
 Este proyecto es una libreria que permitira generar una representacion de numeros complejos y realizar diversas operaciones con ellas, hecho en python como la clase "complejo".
 
@@ -17,11 +18,14 @@ Contiene las funciones de :
 - Division y Multiplicacion  , entre dos complejos
 - Potencia , de un complejo elevado a uno entero.
 - Impresion en forma Polar y Cartesiana, una vez creado.
-### 2) Informacion al Usuario :
+### 2) Documentacion :
+## [Documentacion (click)](https://htmlpreview.github.io/?https://github.com/AriasAEnima/CNYT/blob/master/Libreria%20Numeros%20Complejos/html/libreriacomplejos.html)
+
+### 3) Informacion al Usuario :
 
 ## [Ejemplo de uso libreria (click)](https://github.com/AriasAEnima/CNYT/blob/master/Libreria%20Numeros%20Complejos/Numeros%20complejos.ipynb )
 
-### 3) Pruebas:
+### 4) Pruebas:
 Se realizaron 3 a 4 pruebas por funcion aqui muestro cuales de estas se corrieron y concordaron 
 con el resultado:
 
