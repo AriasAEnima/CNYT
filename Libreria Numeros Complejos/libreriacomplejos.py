@@ -132,6 +132,13 @@ class complejo:
         numero complejo lo imprimira como la dupla (a,b)
         '''
         return "("+str(self.a)+", "+str(self.b)+")"
+    
+    def strcart(self):
+        x=str("%.3f" % self.a)
+        y=""
+        if(self.b>0):
+            y="+"
+        return str(x+y+"%.3f" % self.b+"i")
 
     @property
     def r(self):
