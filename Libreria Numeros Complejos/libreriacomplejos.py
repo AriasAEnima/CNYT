@@ -133,12 +133,12 @@ class complejo:
         '''
         return "("+str(self.a)+", "+str(self.b)+")"
     
-    def strcart(self):
+    def __repr__(self):
         x=str("%.3f" % self.a)
         y=""
         if(self.b>0):
             y="+"
-        return str(x+y+"%.3f" % self.b+"i")
+        return str("{"+x+y+"%.3f" % self.b+"i"+"}")
 
     @property
     def r(self):
