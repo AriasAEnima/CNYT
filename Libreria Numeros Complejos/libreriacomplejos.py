@@ -33,74 +33,7 @@ class complejo:
                 angle=angle%(math.pi*2)
                 angle=math.pi*2-angle
         self._angle=angle%(math.pi*2)
-
-    @staticmethod
-    def suma(x,y):
-        '''
-        Retorna la suma de dos complejos, creados como objetos.
-        Lanzara excepcion si alguno de los no es un complejo
-        Estatico, se podra llamar complejo.suma(x,y)
-        '''
-        complejo.soncomplejos(x,y)
-        return complejo(x.a+y.a,x.b+y.b)
-
-    @staticmethod
-    def resta(x,y):
-        '''
-        Retorna la resta de dos complejos, creados como objetos.
-        Lanzara excepcion si alguno de los no es un complejo
-        Estatico, se podra llamar complejo.resta(x,y)
-        '''
-        complejo.soncomplejos(x,y)
-        return complejo(x.a-y.a,x.b-y.b)
-
-    @staticmethod
-    def producto(x, y):
-        '''
-        Retorna el producto de dos complejos, creados como objetos.
-        Lanzara excepcion si alguno de los no es un complejo
-        Estatico, se podra llamar complejo.producto(x,y)
-        '''
-        complejo.soncomplejos(x,y)
-        return complejo(x.a*y.a-x.b*y.b,x.a*y.b+x.b*y.a)
-
-    @staticmethod
-    def division(x, y):
-        '''
-        Retorna la division de dos complejos, creados como objetos.
-        Lanzara excepcion si alguno de los no es un complejo, y
-        si el divisor resulta ser 0. (Zero Div Error)
-        Estatico, se podra llamar complejo.division(x,y)
-        '''
-        complejo.soncomplejos(x,y)
-        z=y.conjugado()
-        n=complejo.producto(x,z)
-        try:
-            d=(y.a**2+y.b**2)
-            ans=complejo(n.a/d,n.b/d)
-            return ans
-        except ZeroDivisionError as e:
-            raise Exception("ERROR: Division por 0")
-
-    @staticmethod
-    def potencia(x,n):
-        '''
-        Retorna la potencia de un numero complejo, creado como objeto.
-        Lanzara excepcion si x no es un complejo o si n<0
-        n debe ser real
-        Estatico, se podra llamar complejo.producto(x,y)
-        '''
-        if(not isinstance(x, complejo)):
-            raise Exception("ERROR: Deben se Complejo el numero a elevar")
-        if (n==0):
-            ans=complejo(0,0)
-        elif (n<0):
-            raise Exception("ERROR: el exponente es negativo")
-        else:
-            ans=complejo(x.a,x.b)
-            for i in range (1,n):
-                ans=complejo.producto(ans,x)
-        return ans
+ 
 
     def conjugado(self):
         '''
@@ -132,13 +65,6 @@ class complejo:
         numero complejo lo imprimira como la dupla (a,b)
         '''
         return "("+str(self.a)+", "+str(self.b)+")"
-    
-    def __repr__(self):
-        x=str("%.3f" % self.a)
-        y=""
-        if(self.b>0):
-            y="+"
-        return str("{"+x+y+"%.3f" % self.b+"i"+"}")
 
     @property
     def r(self):
@@ -171,13 +97,88 @@ class complejo:
         el_numero.angle
         '''
         return self._angle
+    def __repr__(self):
+        x=str("%.3f" % self.a)
+        y=""
+        if(self.b>0):
+            y="+"
+        return str("{"+x+y+"%.3f" % self.b+"i"+"}")
 
-    @staticmethod
-    def soncomplejos(x,y):
-        '''
-        Hace la verificacion de tipos, lanzara una excepcion si alguno de los parametros
-        x o y no es un complejo
-        Estatico , se podar usar complejos.soncomplejos(x,y)
-        '''
-        if (not isinstance(x, complejo) or not isinstance(y, complejo)) :
-            raise Exception("ERROR: Deben ser Complejos los Parametros")
+def suma(x,y):
+    '''
+    Retorna la suma de dos complejos, creados como objetos.
+    Lanzara excepcion si alguno de los no es un complejo
+    Estatico, se podra llamar complejo.suma(x,y)
+    '''
+    soncomplejos(x,y)
+    return complejo(x.a+y.a,x.b+y.b)
+
+
+def resta(x,y):
+    '''
+    Retorna la resta de dos complejos, creados como objetos.
+    Lanzara excepcion si alguno de los no es un complejo
+    Estatico, se podra llamar complejo.resta(x,y)
+    '''
+    soncomplejos(x,y)
+    return complejo(x.a-y.a,x.b-y.b)
+
+def producto(x, y):
+    '''
+    Retorna el producto de dos complejos, creados como objetos.
+    Lanzara excepcion si alguno de los no es un complejo
+    Estatico, se podra llamar complejo.producto(x,y)
+    '''
+    soncomplejos(x,y)
+    return complejo(x.a*y.a-x.b*y.b,x.a*y.b+x.b*y.a)
+
+def division(x, y):
+    '''
+    Retorna la division de dos complejos, creados como objetos.
+    Lanzara excepcion si alguno de los no es un complejo, y
+    si el divisor resulta ser 0. (Zero Div Error)
+    Estatico, se podra llamar complejo.division(x,y)
+    '''
+    soncomplejos(x,y)
+    z=y.conjugado()
+    n=producto(x,z)
+    try:
+        d=(y.a**2+y.b**2)
+        ans=complejo(n.a/d,n.b/d)
+        return ans
+    except ZeroDivisionError as e:
+        raise Exception("ERROR: Division por 0")
+
+def potencia(x,n):
+    '''
+    Retorna la potencia de un numero complejo, creado como objeto.
+    Lanzara excepcion si x no es un complejo o si n<0
+    n debe ser real
+    Estatico, se podra llamar complejo.producto(x,y)
+    '''
+    if(not isinstance(x, complejo)):
+        raise Exception("ERROR: Deben se Complejo el numero a elevar")
+    if (n==0):
+        ans=complejo(0,0)
+    elif (n<0):
+        raise Exception("ERROR: el exponente es negativo")
+    else:
+        ans=complejo(x.a,x.b)
+        for i in range (1,n):
+            ans=producto(ans,x)
+    return ans
+
+      
+def soncomplejos(x,y):
+    '''
+    Hace la verificacion de tipos, lanzara una excepcion si alguno de los parametros
+    x o y no es un complejo
+    Estatico , se podar usar complejos.soncomplejos(x,y)
+    '''
+    if (not isinstance(x, complejo) or not isinstance(y, complejo)) :
+        raise Exception("ERROR: Deben ser Complejos los Parametros")
+        
+def equals(x,y):
+    if (not isinstance(x, complejo) or not isinstance(y, complejo)) :
+        raise Exception("ERROR: Deben ser Complejos los Parametros")
+    return x.a==y.a and x.b==y.b
