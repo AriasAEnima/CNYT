@@ -178,8 +178,8 @@ def prodtensorial(A,B):
     for i in range(A.filas*B.filas):
         row=[]
         for j in range(A.columnas*B.columnas):
-            inA=A.idx(i//A.filas,j//A.columnas)
+            inA=A.idx(i//B.filas,j//B.columnas)
             inB=B.idx(i%B.filas,j%B.columnas)
             row.append(producto(inA,inB))
         ans.append(row)
-    return ans
+    return matrizcompleja(ans)
