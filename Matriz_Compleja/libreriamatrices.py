@@ -1,8 +1,8 @@
-from libreriacomplejos import complejo as C
-from libreriacomplejos import suma 
-from libreriacomplejos import producto
-from libreriacomplejos import resta
-from libreriacomplejos import equals as eqc
+from Numeros_Complejos.libreriacomplejos import complejo as C
+from Numeros_Complejos.libreriacomplejos import suma 
+from Numeros_Complejos.libreriacomplejos import producto
+from Numeros_Complejos.libreriacomplejos import resta
+from Numeros_Complejos.libreriacomplejos import equals as eqc
 class matrizcompleja:
     def __init__(self,mat=None):
         #self._mat=mat
