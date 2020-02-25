@@ -25,21 +25,21 @@ Se realizaron 3 a 4 pruebas por funcion aqui muestro cuales de estas se corriero
 con el resultado:
 
 * Suma:
-<img src="/Libreria Numeros Complejos/imagenes/pruebas/suma.jpg"  width="600">
+<img src="imagenes/pruebas/suma.jpg"  width="600">
 
 * Resta:
-<img src="/Libreria Numeros Complejos/imagenes/pruebas/resta.jpg"  width="600">
+<img src="imagenes/pruebas/resta.jpg"  width="600">
 
 - Producto:
-<img src="/Libreria Numeros Complejos/imagenes/pruebas/producto.jpg"  width="600">
+<img src="imagenes/pruebas/producto.jpg"  width="600">
 
 - Divison:
-<img src="/Libreria Numeros Complejos/imagenes/pruebas/division.jpg"  width="600">
+<img src="imagenes/pruebas/division.jpg"  width="600">
 
 - Potencia:
-<img src="/Libreria Numeros Complejos/imagenes/pruebas/potencia.jpg"  width="600">
+<img src="imagenes/pruebas/potencia.jpg"  width="600">
 
 - Polar y Cartesiana:
 
 Debemos tener en cuenta que en dara un numero aproximado a lo que deberia dar en las pruebas de cartesiana a polar y viseversa, pasando la prueba aproximado a 5 decimales con los mismos numeros. El angulo valuara el numero π por lo tanto se muestra al lado el numero aprox de rads equivalente al angulo en grados que nos muestra wolfram.
-<img src="/Libreria Numeros Complejos/imagenes/pruebas/polar.jpg"  width="700">
+<img src="imagenes/pruebas/polar.jpg"  width="700">
