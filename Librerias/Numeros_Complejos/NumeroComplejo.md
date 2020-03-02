@@ -14,11 +14,11 @@ Contiene las funciones de :
 - Potencia , de un complejo elevado a uno entero.
 - Impresion en forma Polar y Cartesiana, una vez creado.
 ### 2) Documentacion :
-## [Documentacion (click)](https://htmlpreview.github.io/?https://github.com/AriasAEnima/CNYT/blob/master/Libreria%20Numeros%20Complejos/html/libreriacomplejos.html)
+## [Documentacion (click)](https://htmlpreview.github.io/?https://github.com/AriasAEnima/CNYT/blob/master/Librerias/Numeros_Complejos/html/libreriacomplejos.html)
 
 ### 3) Informacion al Usuario :
 
-## [Ejemplo de uso libreria (click)](https://github.com/AriasAEnima/CNYT/blob/master/Libreria%20Numeros%20Complejos/Numeros%20complejos.ipynb )
+## [Ejemplo de uso libreria (click)](https://github.com/AriasAEnima/CNYT/blob/master/Librerias/Numeros%20complejos.ipynb)
 
 ### 4) Pruebas:
 Se realizaron 3 a 4 pruebas por funcion aqui muestro cuales de estas se corrieron y concordaron 
