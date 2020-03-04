@@ -46,6 +46,7 @@ class matrizcompleja:
             CO.append(row)
         return matrizcompleja(CO)
 
+    #Daga
     def adjmat(self):
         ans=self.conjmat()  
         return ans.trasmat() 

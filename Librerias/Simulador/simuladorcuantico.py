@@ -26,5 +26,4 @@ def resultado(D,I,clicks):
     plt.ylabel('Valor')
     plt.xticks(index,labels,rotation=75)
     plt.title('Evolucion Dinamica del sistema despues de '+str(clicks)+' clicks')
-    plt.show()
-    print(estados)
+    plt.show()   
