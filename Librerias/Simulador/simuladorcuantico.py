@@ -13,7 +13,7 @@ def label(I):
 def estado(V):
     ans=[]
     for i in range(V.filas):
-       ans.append(V.idx(i,0).r**2)
+       ans.append(V.idx(i,0).a**2+V.idx(i,0).b**2)
     return ans
 def resultado(D,I,clicks):
     print("Vector Estado final:")
@@ -27,3 +27,4 @@ def resultado(D,I,clicks):
     plt.xticks(index,labels,rotation=75)
     plt.title('Evolucion Dinamica del sistema despues de '+str(clicks)+' clicks')
     plt.show()   
+    return estados
