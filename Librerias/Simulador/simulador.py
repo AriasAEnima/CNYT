@@ -18,7 +18,7 @@ def estado(V):
 def resultado(D,I,clicks,labels=None):
     print("Vector Estado final:")
     V=simulador(D,I,clicks)
-    if (labels=None):
+    if (labels==None):
         labels=label(I)
     estados=estado(V)
     index=np.arange(len(labels))
