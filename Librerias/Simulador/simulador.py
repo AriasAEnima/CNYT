@@ -20,16 +20,16 @@ def estado(V):
 def resultado(D,I,clicks,labels=None,fs=None,v2s=None,L1=None,L2=None):
     print("Vector Estado final:")
     V=simulador(D,I,clicks)  
-    if (labels==None):
+    if (labels==None and fs!=None):
         labels=generateLabels(fs,v2s,L1,L2)
-    elif (fs!=None):
+    else:
         labels=label(I)
     estados=estado(V)
     index=np.arange(len(labels))
     plt.bar(index,estados)
     plt.xlabel('Estado')
     plt.ylabel('Valor')
-    plt.xticks(index,labels,rotation=75)
+    plt.xticks(index,labels,rotation=90)
     plt.title('Evolucion Dinamica del sistema despues de '+str(clicks)+' clicks')
     plt.show()
     return estados

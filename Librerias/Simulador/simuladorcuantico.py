@@ -15,10 +15,12 @@ def estado(V):
     for i in range(V.filas):
        ans.append(V.idx(i,0).a**2+V.idx(i,0).b**2)
     return ans
-def resultado(D,I,clicks):
+def resultado(D=None,I=None,clicks=None,V=None,labels=None):
     print("Vector Estado final:")
-    V=simulador(D,I,clicks)
-    labels=label(I)
+    if (V==None):
+        V=simulador(D,I,clicks)        
+    if labels==None:
+        labels=label(V)
     estados=estado(V)
     index=np.arange(len(labels))
     plt.bar(index,estados)
