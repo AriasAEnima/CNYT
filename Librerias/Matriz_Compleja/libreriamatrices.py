@@ -3,6 +3,7 @@ from Numeros_Complejos.libreriacomplejos import suma
 from Numeros_Complejos.libreriacomplejos import producto
 from Numeros_Complejos.libreriacomplejos import resta
 from Numeros_Complejos.libreriacomplejos import equals as eqc
+from math import sqrt
 class matrizcompleja:
     def __init__(self,mat=None):
         #self._mat=mat
@@ -54,7 +55,7 @@ class matrizcompleja:
     def norma(self):
         if self.columnas>1:
             raise Exception("ERROR: Debe ser un vector")
-        return prodintmat(self,self).idx(0,0).a
+        return sqrt(prodintmat(self,self).idx(0,0).a)
     
     def unitaria(self):
         if(not self.cuadrada()):
@@ -79,6 +80,16 @@ class matrizcompleja:
                 return multmat(self.potencia(n//2),self.potencia(n//2))
             else:
                 return multmat(multmat(self.potencia(n//2),self.potencia(n//2)),self)
+    
+    def normalizar(self):
+        ans=[]
+        nor=self.norma()
+        for i in self._mat:
+            row=[]
+            for j in i:
+                row.append(C(j.a/nor,j.b/nor))
+            ans.append(row)
+        return matrizcompleja(ans)
     
     @property
     def mat(self):
