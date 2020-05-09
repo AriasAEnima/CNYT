@@ -1,11 +1,16 @@
 # Liberia Complejos
 ## Curso CNYT Ciencias Naturales y Tecnolgia
 ## Escuela Colombiana de Ingeneria Julio Garavito
-<img src="/Imagenes/logo.jpg" >
-
+<img src="/Imagenes/logo.jpg" witdh="50%"/>
 ## Programado por : Julian Eduardo Arias Barrera
 
+<br>
+<br>
+
 # Proyecto #1
+
+<img src="/Imagenes/mal.PNG" witdh="50%"/>
+
 ### Contenido por cada Libreria:
 1) Descripcion
 2) Documentacion
@@ -16,15 +21,33 @@
 ## - [Libreria Matriz Compleja (click)](https://github.com/AriasAEnima/CNYT/blob/master/Librerias/Matrices.ipynb)
 ### Contiene un ejemplo (por el momento) de utilizacion de la libreria de matrices
 ## - [Ejemplo Maldelbrot (click)](https://github.com/AriasAEnima/CNYT/blob/master/Librerias/Maldelbrot.ipynb)
-### Contiene un ejemplo de Maldelbrot
+### Contiene un ejemplo de Maldelbrot 
+<br>
+<br>
 
+# Sistemas Dinamicos
+
+## - [Ejemplo Sistema Dinamicos (click)](https://github.com/AriasAEnima/CNYT/blob/master/Librerias/Sistemas%20Dinamicos.ipynb)
+### Contiene un ejemplo de Sistemas Dinamicos
+
+
+# Sistemas Cuanticos
+
+## - [Ejemplo Sistema Cuanticos (click)](https://github.com/AriasAEnima/CNYT/blob/master/Librerias/Sistemas%20Cuanticos.ipynb)
+### Contiene un ejemplo de Sistemas cuanticos
+<br>
+<br>
 
 
 # Sistemas Ensamblados "Pokemon"
 
-## - [Ejemplo Sistema Ensamblados (click)]https://github.com/AriasAEnima/CNYT/blob/master/Librerias/Pokemon.ipynb)
+<img src="/Imagenes/pokemon.PNG" witdh="50%"/>
+
+## - [Ejemplo Sistema Ensamblados (click)](https://github.com/AriasAEnima/CNYT/blob/master/Librerias/Pokemon.ipynb)
 ### Contiene un ejemplo de Sistemas ensamblados probabilisticos
 
+<br>
+<br>
 
 
 # Proyecto #2
@@ -32,4 +55,4 @@
 ## - [Experimento de Rendija y IBM (click)](https://github.com/AriasAEnima/CNYT/blob/master/Librerias/Proyecto%202.ipynb)
 ### El desarrolo del experimento y la comparacion con el uso de IBM quatum experience
 
-
+<img src="/Imagenes/proyecto2.PNG" witdh="50%"/>
