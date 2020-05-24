@@ -1,7 +1,7 @@
-# Liberia Complejos
-## Curso CNYT Ciencias Naturales y Tecnolgia
+# Curso CNYT Ciencias Naturales y Tecnolgia
 ## Escuela Colombiana de Ingeneria Julio Garavito
 <img src="/Imagenes/logo.jpg" witdh="50%"/>
+
 ## Programado por : Julian Eduardo Arias Barrera
 
 <br>
@@ -56,3 +56,12 @@
 ### El desarrolo del experimento y la comparacion con el uso de IBM quatum experience
 
 <img src="/Imagenes/proyecto2.PNG" witdh="50%"/>
+
+# PROYECTO FINAL
+
+## - [Algoritmo de de Deutsch-Jozsa  (click)](https://github.com/AriasAEnima/CNYT/blob/master/Proyecto%20Final%20-%20Jupyter%20Notebook.pdf)
+### El desarrolo del algoritmo con varios casos
+# Codigo fuente : /Librerias/Proyecto Final.ipynb
+
+
+<img src="/Imagenes/Proyecofinal.PNG" witdh="50%"/>
