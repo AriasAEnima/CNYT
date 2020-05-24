@@ -13,7 +13,7 @@ def label(I):
 def estado(V):
     ans=[]
     for i in range(V.filas):
-       ans.append(V.idx(i,0).a**2+V.idx(i,0).b**2)
+       ans.append(V.idx(i,0).r**2)
     return ans
 def resultado(D=None,I=None,clicks=None,V=None,labels=None):
     print("Vector Estado final:")

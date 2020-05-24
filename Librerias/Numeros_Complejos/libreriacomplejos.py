@@ -98,11 +98,16 @@ class complejo:
         '''
         return self._angle
     def __repr__(self):
-        x=str("%.3f" % self.a)
-        y=""
+        x=str(self.a)
+        y=str(self.b)
+        if '.' in x:
+            x=str("%.3f" % self.a)       
+        s=""
+        if '.' in y:
+           y=str("%.3f" % self.b)
         if(self.b>=0):
-            y="+"
-        return str("{"+x+y+"%.3f" % self.b+"i"+"}")
+            s="+"        
+        return str("{"+x+s+y+"i"+"}")
 
 def suma(x,y):
     '''
