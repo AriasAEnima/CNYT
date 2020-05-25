@@ -59,7 +59,7 @@
 
 # PROYECTO FINAL
 
-## - [Algoritmo de de Deutsch-Jozsa  (click)](https://github.com/AriasAEnima/CNYT/blob/master/Proyecto%20Final%20-%20Jupyter%20Notebook.pdf)
+## - [Algoritmo de Deutsch-Jozsa  (click)](https://github.com/AriasAEnima/CNYT/blob/master/Proyecto%20Final%20-%20Jupyter%20Notebook.pdf)
 ### El desarrolo del algoritmo con varios casos
 # Codigo fuente : /Librerias/Proyecto Final.ipynb
 
